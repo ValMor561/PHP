@@ -1,0 +1,31 @@
+function mutation_count($__first, $__second){
+    if (strlen($__first) <= strlen($__second)) {
+        $len = strlen($__first);
+    }
+    else {
+        $len = strlen($__second);
+    }
+    if ((check_nuclear($__first) == false) || (check_nuclear($__second) == false)) {
+        return false;
+    }
+    $count = abs(strlen($__first) - strlen($__second));;
+    for ($i = 0;$i < $len; ++$i) {
+        $fletter = substr($__first, $i, 1);
+        $sletter = substr($__second, $i, 1);
+        if ($fletter != $sletter) {
+            ++$count;
+        }      
+    }
+    return $count;
+}
+
+function check_nuclear($str){
+    $len = strlen($str);
+    for ($i = 0;$i < $len; ++$i) {
+        $letter = substr($str, $i, 1);
+        if (strpos("GTAC", $letter) === false) {
+            return false;
+        }      
+    }
+    return true;
+}

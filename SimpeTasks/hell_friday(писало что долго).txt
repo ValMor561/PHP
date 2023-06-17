@@ -1,0 +1,12 @@
+function hell_friday($__year){
+    $result=array();
+    $m = 1;
+    while ($m <= 12){
+        $start = mktime(0,0,0,$m,13,$__year);
+        if (date("l",$start) == "Friday") {
+            $result[] = date("d-m-Y",$start);
+        }
+        ++$m; 
+    }
+    return $result;
+}

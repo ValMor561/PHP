@@ -1,0 +1,26 @@
+function capitalize_first_letter($__text)
+{
+     $sentenseArr  = preg_split("~[.!?](?=\\s+|$)~",$__text);
+     array_pop($sentenseArr);
+     foreach ($sentenseArr as $num => $sentense) {
+         $sentenseArr[$num] = trim($sentenseArr[$num]);
+     }
+     $maxlen = 0;
+     foreach ($sentenseArr as $num => $sentense) {
+         if ($maxlen < mb_strlen($sentense)) {
+             $maxlen = mb_strlen($sentense);
+             $maxSentense = $sentense;
+             $maxNum = $num;
+         }
+     }
+     $newMaxSentense =preg_replace_callback(
+            "|\s+[[:upper:]]*\s|uis", 
+            function ($matches) {
+            $matches[0]= mb_strtolower($matches[0]);
+            $word = preg_split("||u", $matches[0]);
+            $word[2] = mb_strtoupper($word[2]);
+            return implode($word);
+     },
+     $maxSentense);
+     return str_replace($maxSentense, $newMaxSentense, $__text);
+}

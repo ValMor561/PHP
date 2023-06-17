@@ -1,0 +1,42 @@
+function hamming_code($code){
+    $tmp = array();
+    $res[1] = 0;
+    $res[2] = 0;
+    $i = 2;
+    foreach ($code as $num => $value) {
+        ++$i;
+        if ($i == 4 || $i == 8 || $i == 16){
+            $res[$i] = 0;
+            ++$i;
+        }
+        $res[] = $value;
+    }
+    foreach ($res as $num => $value) {
+        if ($num%2 == 1){
+            $res[1] += $value;
+        }
+        if ($num%4 == 2 || $num%4 == 3){
+            $res[2] += $value;
+        }
+        if ($num%8 >= 4 && $num%8 <= 7){
+            $res[4] += $value;
+        }
+        if ($num >= 8 && $num <= 15) {
+            $res[8] += $value;
+        }
+        if ($num >= 16){
+            $res[16] += $value;
+        }
+    }
+    $res[1] = $res[1]%2;
+    $res[2] = $res[2]%2;
+    $res[4] = $res[4]%2;
+    $res[8] = $res[8]%2;
+    $res[16] = $res[16]%2;
+    $res[22] = 0;
+    foreach ($res as $value){
+        $res[22] += $value;
+    }
+    $res[22] = $res[22]%2;
+    return serialize($res);
+}

@@ -1,0 +1,25 @@
+function name_the_big_file($__path){
+  return basename(find_bigest_file($__path));
+}
+function find_bigest_file($__path){
+ $maxsize = 0;
+ $maxname = "";
+ foreach (glob("$__path\*") as $filename) {
+    if (is_file($filename)) {
+        $size = filesize($filename);
+        if ($size > $maxsize){
+            $maxname = $filename;
+            $maxsize = $size;
+        }
+    }
+    else {
+        $name = find_bigest_file($filename);
+        $size = filesize($name);
+        if ($size > $maxsize) {
+            $maxsize = filesize($name);
+            $maxname = $name;
+        }
+    }
+  }
+  return $maxname;
+}

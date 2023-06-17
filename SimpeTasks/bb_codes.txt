@@ -1,0 +1,4 @@
+function bb_codes($__text){
+    return preg_replace("|\[+([b(em)i\/]*)\]|uis", "<$1>", $__text);
+    
+}

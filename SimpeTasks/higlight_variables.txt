@@ -1,0 +1,3 @@
+function highlight_variables($__text){
+    return preg_replace('/(\$[^, ]*)/is', '<b>$1</b>', $__text) ;
+}

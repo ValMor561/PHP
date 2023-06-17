@@ -1,0 +1,21 @@
+function to_html_list($arr){
+    $res = "<ul>";
+    foreach ($arr as $value) {
+        if (is_array($value)){
+            $res .= "<li>";
+            $res .= to_html_list($value);
+            $res .= "</li>";
+        }
+        else if ($value === true){
+            $res .= "<li>true</li>";
+        }
+        else if ($value === false){
+            $res .= "<li>false</li>";
+        }
+        else {
+            $res .= "<li>$value</li>";
+        }
+    }
+    $res .= "</ul>";
+    return $res;
+}

@@ -1,0 +1,14 @@
+function get_most_expensive_car($carsArr, $powersArr, $cost){
+    $res = array();
+    foreach ($carsArr as $firm => $modelsArr) {
+        $minpower = 10000;
+        foreach ($modelsArr as $models) {
+            if ($powersArr[$models] <= $minpower) {
+                $minpower = $powersArr[$models];
+                $modelsName = $models;
+            }
+        }
+        $res[$firm." ".$modelsName] = $minpower*$cost; 
+    }
+    return $res;
+}

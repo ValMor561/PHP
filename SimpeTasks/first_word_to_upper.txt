@@ -1,0 +1,25 @@
+function first_word_to_upper($__text)
+{
+    $sentenseArr = explode("! ",$__text);
+    foreach ($sentenseArr as $number => $sentense ) {
+        $wordArr = explode(" ", $sentense);
+        $wordArr[0] = mb_strtoupper($wordArr[0]);
+        $sentenseArr[$number] = implode(" ", $wordArr);
+    } 
+    $result = implode("! ", $sentenseArr);
+    $sentenseArr = explode("? ",$result);
+    foreach ($sentenseArr as $number => $sentense ) {
+        $wordArr = explode(" ", $sentense);
+        $wordArr[0] = mb_strtoupper($wordArr[0]);
+        $sentenseArr[$number] = implode(" ", $wordArr);
+    } 
+    $result = implode("? ", $sentenseArr);
+    $sentenseArr = explode(". ",$result);
+    foreach ($sentenseArr as $number => $sentense ) {
+        $wordArr = explode(" ", $sentense);
+        $wordArr[0] = mb_strtoupper($wordArr[0]);
+        $sentenseArr[$number] = implode(" ", $wordArr);
+    } 
+    $result = implode(". ", $sentenseArr);
+    return $result;
+}
