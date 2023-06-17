@@ -1,0 +1,386 @@
+/* Настройки по умолчанию */
+@font-face {
+  font-family: adbecnd;
+  src: url(../adbecnd.ttf);
+}
+div {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+.clearfix:after {
+  content: " ";
+  display: table;
+  width: 100%;
+  clear: both;
+}
+.container {
+  width: 930px;
+  margin: 0 auto;
+  background-color: #f4f4ea;
+}
+/* Верхняя строка шапки */
+.here {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  width: auto;
+  padding: 12px 0px 10px 22px;
+  float: left;
+}
+.home {
+  margin-left: 152px;
+  padding-top: 15px;
+  width: auto;
+}
+.home #text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+}
+.home a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+  color: #50a70e;
+  background-image: none;
+  padding: 0px;
+  text-decoration: underline;
+}
+/*Блок шапки с поиском*/
+.yellow_background {
+  background: #f8be2d;
+  float: right;
+  margin: -25px 25px 0px 0px;
+  border-radius: 5px;
+  min-height: 51px;
+}
+.background_search .yellow_background div {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #fff;
+  font-weight: bold;
+  padding-right: 5px;
+  padding-left: 10px;
+  float: left;
+}
+.background_search .yellow_background .align {
+  margin-top: 17px;
+}
+.background_search .yellow_background .form {
+  margin-top: 2px;
+}
+.background_search .yellow_background .button {
+  margin-top: 15px;
+}
+.background_search button {
+  background-image: url("../images/botton.PNG");
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+  border-radius: 2px;
+  margin-right: 10px;
+  border: 0px;
+  padding: 3px 10px;
+  box-shadow: 0px -1px 1px 0px #fff;
+}
+.background_search select {
+  padding-right: 10px;
+  color: #848484;
+}
+/*Блок шапки с логотипом и меню*/
+.green_background {
+  background-image: url("../images/green_background.png");
+  max-height: 83px;
+}
+.logo {
+  padding: 18px 0px 0px 22px;
+  float: left;
+}
+.logo p {
+  font-family: "adbecnd";
+  font-size: 8.6pt;
+  font-weight: initial;
+  color: #aabda2;
+  margin-top: -5px;
+  letter-spacing: -1px;
+}
+.menu {
+  margin-left: 286px;
+  padding-top: 34px;
+  padding-bottom: -2px;
+  margin-bottom: -2px;
+}
+.menu ul li {
+  display: inline-block;
+}
+.menu a {
+  text-decoration: none;
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+  color: #fff;
+  background-image: url("../images/1.PNG");
+  border-radius: 5px 5px 0px 0px;
+  padding: 14px 20px;
+}
+.menu .active {
+  background-color: #f5f5eb;
+  background-image: none;
+  color: #000;
+  border-radius: 5px 5px 0px 0px;
+  padding: 16px 20px;
+}
+/*Правый блок*/
+.right_column {
+  margin: 30px 10px 0px -25px;
+  width: 675px;
+  float: right;
+}
+/*Блок с рукопожатием*/
+.right_column .curent_job {
+  background-image: url("../images/background.PNG");
+  box-shadow: 0px 0px 3px 3px #dbd9cc;
+  border-radius: 5px;
+  width: 675px;
+  height: 164px;
+}
+.right_column .curent_job div:last-child {
+  width: 455px;
+  float: right;
+  margin-right: 20px;
+}
+.right_column .curent_job div:first-child {
+  float: left;
+}
+.right_column h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  font-weight: normal;
+  text-align: left;
+}
+.right_column .curent_job img {
+  box-shadow: 0px 0px 2px 2px #e9e9e9;
+  padding: 3px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.right_column .curent_job p {
+  margin-top: -5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+  color: #666666;
+}
+.right_column .curent_job a {
+  font-size: 11pt;
+  text-decoration: underline;
+  color: #50a70e;
+  margin-top: -15px;
+}
+/*Левый блок про безопасность*/
+.right_column .confidetiality,
+.proffesionalism {
+  width: 330px;
+  margin: 10px 0px 20px 0px;
+  height: 280px;
+  background-image: url("../images/gray_background.PNG");
+  box-shadow: 0px 0px 3px 3px #dbd9cc;
+  background-size: cover;
+  padding: 1px;
+}
+.right_column .confidetiality,
+.proffesionalism p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #828282;
+}
+.right_column .confidetiality .green_block {
+  background-color: #519300;
+  width: 180px;
+  border-radius: 0px 9px 9px 0px;
+  box-shadow: 1px 1px 1px 1px #a19f97;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21pt;
+  color: #fff;
+  padding: 5px 20px 5px 5px;
+  margin: 10px 0px 0px -2px;
+}
+.right_column .confidetiality p {
+  margin: 20px 0px 20px 8px;
+}
+.right_column .confidetiality a {
+  margin-left: 8px;
+}
+.right_column .confidetiality a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  color: #50a70e;
+  text-decoration: underline;
+}
+.right_column .confidetiality {
+  float: left;
+}
+/*Правый блок про професионализм*/
+.right_column .proffesionalism {
+  float: right;
+}
+.right_column .proffesionalism .blue_block {
+  background-color: #147a9c;
+  width: 212px;
+  border-radius: 0px 9px 9px 0px;
+  box-shadow: 1px 1px 1px 1px #a19f97;
+  margin: 10px 0px 0px -2px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21pt;
+  color: #fff;
+  padding: 5px 20px 5px 5px;
+}
+.right_column .proffesionalism div:nth-child(3) {
+  float: right;
+  width: 176px;
+}
+.right_column .proffesionalism div:last-child {
+  clear: both;
+}
+.right_column .proffesionalism .woman {
+  float: left;
+  padding: 0px 8px;
+  margin: 20px 0px 0px 5px;
+}
+.right_column .proffesionalism img {
+  box-shadow: 0px 0px 2px 2px #e9e9e9;
+  padding: 3px;
+}
+.right_column .proffesionalism a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  color: #0e7c99;
+  text-decoration: underline;
+}
+.right_column .last_url {
+  padding-bottom: 20px;
+}
+/*Блок с четырмя логотипами и текстом*/
+.right_column .many_logo h1 {
+  clear: both;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19pt;
+  font-weight: normal;
+  margin: 30px 0px 20px 0px;
+}
+.right_column .many_logo .logo_2,
+.right_column .many_logo .logo_4 {
+  clear: both;
+  float: right;
+}
+.right_column .many_logo div {
+  width: 310px;
+  padding: 0px 5px;
+}
+.right_column .many_logo h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #000;
+  margin: 0px 0px -10px 0px;
+}
+.right_column .many_logo img {
+  padding-right: 20px;
+  float: left;
+}
+.right_column .many_logo p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #828282;
+}
+.right_column .many_logo a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  text-decoration: underline;
+  color: #a7a185;
+}
+/*Левый блок*/
+.left_column {
+  float: left;
+  margin: 30px 0px 0px 13px;
+  background-color: #eeece0;
+  width: 220px;
+  border-radius: 5px;
+}
+.left_column .clearfix div:nth-child(-n + 4) {
+  float: left;
+}
+.left_column .popular_jobs {
+  width: 205px;
+  background-image: url("../images/3.PNG");
+  border-radius: 0px 9px 9px 0px;
+  box-shadow: 1px 1px 1px 1px #a19f97;
+  padding-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21pt;
+  color: #fff;
+  padding: 1px 0px 1px 20px;
+  margin: 12px 0px 0px 0px;
+}
+.left_column h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  font-weight: normal;
+  text-align: left;
+  margin-left: 15px;
+}
+.left_column a {
+  text-decoration: underline;
+  color: #848484;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+}
+.left_column ul {
+  margin: -5px 0px 0px -30px;
+}
+.left_column li {
+  list-style-type: none;
+  padding-bottom: 3px;
+}
+.left_column li::before {
+  content: ">";
+  color: #848484;
+}
+.left_column .all_jobs a {
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #50a70e;
+}
+.left_column .all_jobs {
+  padding: 30px 0px 34px 16px;
+}
+/*Подвал*/
+.footer {
+  margin: 20px 0px 0px 0px;
+  background-color: #e1e0d2;
+}
+.footer .left_list {
+  padding-top: 1px;
+}
+.footer .left_list li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #8a877b;
+  display: inline-block;
+}
+.footer .left_list a {
+  text-decoration: underline;
+  color: #8a877b;
+  margin-left: 0px;
+}
+.footer .right_list {
+  margin-right: 70px;
+  float: right;
+}
+.footer .right_list li {
+  display: inline-block;
+}
+.footer .right_list a {
+  text-decoration: underline;
+  color: #8a877b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+}

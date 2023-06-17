@@ -1,0 +1,346 @@
+/* Настройки по умолчанию */
+@font-face {
+  font-family: adbecnd;
+  src: url(../adbecnd.ttf);
+}
+table {
+  padding: 0px;
+  margin: 0px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.container {
+  max-width: 930px;
+  margin: 0px auto;
+  background-color: #f4f4ea;
+}
+/* Верхняя строка шапки */
+#here {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  width: 130px;
+  padding: 12px 0px 10px 22px;
+}
+#home {
+  padding-top: 5px;
+  width: 50px;
+}
+#home #text {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+}
+#home a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+  color: #50a70e;
+  background-image: none;
+  padding: 0px;
+  text-decoration: underline;
+}
+/*Таблица шапки с поиском*/
+.table_with_search {
+  background: #f8be2d;
+  margin: 8px 0px 0px 165px;
+  border-radius: 5px;
+  width: auto;
+}
+.table_with_search td {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #fff;
+  font-weight: bold;
+  vertical-align: middle;
+  padding-right: 5px;
+  padding-left: 10px;
+}
+.table_with_search td:first-child {
+  padding-left: 20px;
+  width: auto;
+}
+.table_with_search button {
+  background-image: url("../images/botton.PNG");
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+  border-radius: 2px;
+  margin-right: 15px;
+  border: 0px;
+  padding: 3px 10px;
+  box-shadow: 0px -1px 1px 0px #fff;
+}
+.table_with_search select {
+  padding-right: 10px;
+  color: #848484;
+}
+/*Список меню*/
+.string_with_home {
+  padding-bottom: 100px;
+}
+.string_with_home ul {
+  margin: 24px 0px 0px 75px;
+}
+.string_with_home ul li {
+  display: inline-block;
+}
+.string_with_home a {
+  text-decoration: none;
+  background-color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+  color: #fff;
+  background-image: url("../images/1.PNG");
+  border-radius: 5px 5px 0px 0px;
+  padding: 14px 20px;
+}
+.string_with_home .active {
+  background-color: #f5f5eb;
+  background-image: none;
+  color: #000;
+  border-radius: 5px 5px 0px 0px;
+  padding: 16px 20px;
+}
+/*Таблица с логотипом*/
+.string_with_logo {
+  background-image: url("../images/green_background.png");
+}
+.string_with_logo td {
+  padding: 18px 0px 0px 22px;
+}
+.string_with_logo p {
+  font-family: "adbecnd";
+  font-size: 8.6pt;
+  font-weight: initial;
+  color: #aabda2;
+  margin-top: -5px;
+  letter-spacing: -1px;
+}
+/*Таблица с основным контентом*/
+.main_table {
+  margin-top: -2px;
+}
+/*Левая колонка*/
+.left_table {
+  margin: 30px 0px 0px 13px;
+  background-color: #eeece0;
+  width: 220px;
+  border-radius: 5px;
+}
+.left_table .popular_jobs td {
+  padding-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21pt;
+  color: #fff;
+  padding-left: 20px;
+  margin-top: 100px;
+}
+.left_table .popular_jobs {
+  margin: 12px 0px 0px 0px;
+  width: auto;
+  background-image: url("../images/3.PNG");
+  border-radius: 0px 9px 9px 0px;
+  box-shadow: 1px 1px 1px 1px #a19f97;
+}
+.left_table h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  font-weight: normal;
+  text-align: left;
+  margin-left: 15px;
+}
+.left_table a {
+  text-decoration: underline;
+  color: #848484;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 9pt;
+}
+.left_table ul {
+  margin: -5px 0px 0px -30px;
+}
+.left_table li {
+  list-style-type: none;
+  padding-bottom: 3px;
+}
+.left_table li::before {
+  content: ">";
+  color: #848484;
+}
+.left_table .all_jobs a {
+  text-decoration: underline;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  color: #50a70e;
+}
+.left_table .all_jobs td {
+  padding: 30px 0px 40px 16px;
+}
+/*Правая колонка*/
+.right_table h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  font-weight: normal;
+  text-align: left;
+}
+/*Таблица c рукопожатием*/
+.right_table .curent_job {
+  background-image: url("../images/background.PNG");
+  box-shadow: 0px 0px 3px 3px #dbd9cc;
+  border-radius: 5px;
+  width: 675px;
+  margin-left: 5px;
+}
+.right_table .curent_job td:last-child {
+  width: auto;
+  padding: 0px 20px;
+}
+.right_table .curent_job td:first-child {
+  width: auto;
+}
+.right_table .curent_job img {
+  box-shadow: 0px 0px 2px 2px #e9e9e9;
+  padding: 3px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.right_table .curent_job p {
+  margin-top: -5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+  color: #666666;
+}
+.right_table .curent_job a {
+  font-size: 11pt;
+  text-decoration: underline;
+  color: #50a70e;
+  margin-top: -15px;
+}
+/*Левая таблица про безопасность*/
+.right_table .confidetiality,
+.proffesionalism {
+  width: 330px;
+  background-image: url("../images/gray_background.PNG");
+  box-shadow: 0px 0px 3px 3px #dbd9cc;
+  background-size: cover;
+  margin: 5px -13px 0px 5px;
+}
+.right_table .confidetiality,
+.proffesionalism p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #828282;
+}
+.right_table .confidetiality .green_block {
+  background-color: #519300;
+  width: auto;
+  border-radius: 0px 9px 9px 0px;
+  box-shadow: 1px 1px 1px 1px #a19f97;
+  margin: 10px 0px 0px -2px;
+}
+.right_table .confidetiality .green_block td {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21pt;
+  color: #fff;
+  padding: 5px 20px 5px 5px;
+}
+.right_table .confidetiality p {
+  margin-left: 8px;
+}
+.right_table .confidetiality a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  color: #50a70e;
+  text-decoration: underline;
+  margin-left: 8px;
+}
+/*Правая таблица про професионализм*/
+.right_table .proffesionalism .blue_block {
+  background-color: #147a9c;
+  width: auto;
+  border-radius: 0px 9px 9px 0px;
+  box-shadow: 1px 1px 1px 1px #a19f97;
+  margin: 10px 0px 0px -2px;
+}
+.right_table .proffesionalism .blue_block td {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 21pt;
+  color: #fff;
+  padding: 5px 20px 5px 5px;
+}
+.right_table .proffesionalism img {
+  box-shadow: 0px 0px 2px 2px #e9e9e9;
+  padding: 3px;
+  margin-left: 5px;
+}
+.right_table .last_url {
+  padding-bottom: 20px;
+}
+.right_table .proffesionalism .woman td {
+  padding: 0px 8px;
+}
+.right_table .proffesionalism a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  color: #0e7c99;
+  text-decoration: underline;
+  margin-left: 8px;
+}
+.right_table .special_proposition h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 19pt;
+  font-weight: normal;
+  margin-bottom: -5px;
+}
+.right_table .special_proposition table {
+  width: 310px;
+}
+.right_table .special_proposition td {
+  padding: 0px 5px 0px 5px;
+}
+.right_table .special_proposition h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #000;
+  margin-bottom: -12px;
+}
+.right_table .special_proposition p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #828282;
+}
+.right_table .special_proposition a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+  text-decoration: underline;
+  color: #a7a185;
+}
+/*Подвал*/
+.footer {
+  margin-top: -2px;
+}
+.footer_table {
+  margin: 20px 0px 0px 0px;
+  background-color: #e1e0d2;
+}
+.footer_table .left_list li {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+  color: #8a877b;
+  display: inline-block;
+}
+.footer_table .left_list a {
+  text-decoration: underline;
+  color: #8a877b;
+  margin-left: 0px;
+}
+.footer_table td {
+  width: 465px;
+}
+.footer_table .right_list li {
+  display: inline-block;
+}
+.footer_table .right_list a {
+  text-decoration: underline;
+  color: #8a877b;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 10pt;
+}
