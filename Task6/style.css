@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Roboto');
+
+html, body {
+    height : 100%;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+#last_block {
+	padding-bottom:40px;
+}
+.inner {
+	margin-top:20px;
+    text-align: center;
+    width: auto;
+    padding: 0px 15px;
+}
+
+.login h2 {
+    text-align: center;
+    font-weight: 200;
+    font-size: 2em;
+    margin-top: 10px;
+    color: #34495e;
+}
+
+.send_na input[type="text"],.send_na input[type="password"],.send_na button,
+.send_a input[type="text"],.send_a input[type="password"],.send_a button,
+.login input[type="text"],.login input[type="password"],.login button {
+    width: 80%;
+    margin-bottom: 25px;
+    height: 40px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #bbb;
+    padding-left:10px;
+    font-size: 14px;
+}
+  
+.send_na button ,.send_a button ,.login button {
+    background: #2E8BC0;
+    border:none;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.send_na,.send_a,.login,.message_page,.authorise_user{
+    background: #ecf0f1;
+    margin: 0 auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 10px #333;
+    padding:15px;
+    max-width: 35%;
+}
+
+.send_na textarea,.send_a textarea {
+    border-radius: 8px;
+    padding-left: 10px;
+    font-size: 14px;
+    height: 100px;
+    resize: none;
+    outline: none;
+    margin: -15px 0px 25px 0px;
+    width: 80%;
+}
+
+.send_a textarea {
+    margin-top: 10px;
+}
+.page_list {
+    margin-top: 40px;
+    text-align: left;
+}
+.page_list button{
+    font-size: 18px;
+    color:#145DA0;
+	margin-right:5px
+}
+.page_list li{
+    display: inline-block;
+}
+.message {
+    margin: 5%;
+    width: 90%;
+    border-radius: 5px;
+    background-color: #fff;
+    padding-top: -15px;
+    text-align: left;
+    padding:5px 0px 5px 10px;
+    margin-bottom: -15px;
+}
+.message .bi_bi-trash{
+    color: red;
+}
+.message button {
+    float: right;
+    border:0px;
+    background-color:#fff;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.name {
+    color:#145DA0;
+    font-size: 18px;
+}
+.text {
+    font-size:16px;
+}
+.time {
+    color:#145DA0;
+}
+.time i{
+    color:green;
+	font-style:normal;
+}
+.authorise_user {
+    font-size: 18px;
+}
+.authorise_user button {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    outline: 0;
+    border: 1px solid #bbb;
+    padding-left:10px;
+    font-size: 14px;
+    background: #FB3640;
+    border:none;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    cursor: pointer;
+}
+#selected {
+	color:red;
+}
