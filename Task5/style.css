@@ -1,0 +1,43 @@
+.container {
+	margin-top: 20px;
+	padding-left:50%;
+}
+.calc { 
+	padding : 20px;
+	border-radius:5px;
+	margin-left:-170px;
+	width : 170px;
+	background-color:#FFA07A;
+	line-height:2px;
+}
+.calc select {
+	width:165px;
+}
+.calc p {
+	margin:9px 0px;
+}
+.calc input[type=text] {
+	border:0px;
+	border-radius:2px;
+	margin-top:-2px;
+	height:14px;
+	width: 160px;
+}
+.calc #button {
+	margin-right:3px;
+	height : 30px;
+	min-width : 80px;
+	background-color:#F0FFFF;
+	border-radius: 2px;
+	border:0px
+}
+.calc textarea {
+	outline: none;
+	font-size:12px;
+	resize: none;
+	width: 160px;
+	border: 0px;
+	border-radius:2px;
+	height: 17px;
+	overflow: auto;
+}
